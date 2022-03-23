@@ -1,8 +1,19 @@
+/* body, html {height: 100%;} */
+
+body{
+  background-color: tan; 
+  display: block;
+  /* margin: o; ....for no background all around */
+}
+
+
+/* Navbar */
 nav {
     background-color: #ce8653;
     padding: 15px;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 /* unordered list - Navigation Bar */
@@ -31,14 +42,25 @@ ul li a:hover {
     color: #844728; /* hover text color */
 }
 
-ul li:hover, :active {
+ul li:hover:not(.active) {
     background-color: white; /* hover background color */
     border: 1px solid #844728;
 }
 
+/* active pending */
+.active {
+  padding: 10px;
+  padding-right: 14px;
+  margin-top: 7px;
+  background-color: white;
+  color: #844728;
+  border: 1px solid #844728;
+  overflow: hidden;
+}
+
 /* The dropdown container */
 .dropdown {
-    /* float: left; */
+    float: rightt;
     overflow: hidden;
   }
 
@@ -54,7 +76,7 @@ ul li:hover, :active {
     margin: 0px; /* Important for vertical align on mobile phones */
   }
   
-  /* Add a red background color to navbar links on hover */
+  /* Background color to dropdown tabs on hover */
 .dropdown:hover .dropbtn {
     background-color: white;
     color: #844728;
@@ -67,10 +89,10 @@ ul li:hover, :active {
     background-color: #f9f9f9;
     min-width: 110px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1; /* helped keep nav over hero */
   }
   
-  /* Links inside the dropdown */
+  /* Tabs inside the dropdown */
   .dropdown-content a {
     float: none;
     color: white;
@@ -81,12 +103,12 @@ ul li:hover, :active {
     text-align: center;
   }
   
-  /* Add a grey background color to dropdown links on hover */
+  /* Background color to dropdown tabs on hover */
   .dropdown-content a:hover {
     background-color: tan;
   }
   
-  /* Show the dropdown menu on hover */
+  /* Shows the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
     overflow: hidden;
@@ -95,12 +117,18 @@ ul li:hover, :active {
 
 
 /* Header */
+header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  display: block;
+}
+
 .hero-image {
-    /* "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
-  /* Set a specific height */
-  height: 50%;
-  /* Position and center the image to scale nicely on all screens */
+  /* "linear-gradient" to add a darken background effect to the image (___.jpg) to make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero-canyon-river.jpg");
+  height: 455px; /*500px*/
+  /* Position and center the image to scale well on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,6 +147,22 @@ ul li:hover, :active {
 /* End of Header */
 
 
+/* Intro */
+.welcome {
+  color: #844728;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 75px;
+}
+/* End of Intro */
+
+
+/* Featured Trip */
+.featured {
+  text-align: center;
+
+}
 
 
 /* Footer */
