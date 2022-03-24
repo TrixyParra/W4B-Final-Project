@@ -1,9 +1,13 @@
 /* body, html {height: 100%;} */
 
+* {
+  box-sizing: border-box;
+} 
+
 body{
   background-color: tan; 
   display: block;
-  /* margin: o; ....for no background all around */
+  /* margin: 0px; ....for no background all around */
 }
 
 
@@ -161,11 +165,39 @@ header {
 /* Featured Trip */
 .featured {
   text-align: center;
-
+  color: white;
+  text-shadow: 3px 0px 5px #844728;
+  /* margin-bottom: 75px; */
+  border: 3px solid white;
+  background-color: #ce8653;
+  padding-bottom: 50px;
 }
 
+.polaroid {
+  float: left;
+  width: 32.5%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 5px;
+  margin-left: 5.9px;
+  margin-top: 15px;
+}
+
+.caption {
+  text-align: center;
+  padding: 10px 20px;
+  color: #844728;
+  text-shadow: none; /*1px 0px 5px #844728;*/
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /* Footer */
 footer {
     background-color: #ce8653;
+    clear: both;
 }
