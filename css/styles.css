@@ -77,8 +77,8 @@ ul li:hover:not(.active) {
     color: white;
     padding: inherit;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0px; /* Important for vertical align on mobile phones */
+    font-family: inherit; /* vertical align on mobile phones */
+    margin: 0px; /* vertical align on mobile phones */
   }
   
   /* Background color to dropdown tabs on hover */
@@ -130,7 +130,7 @@ header {
 }
 
 .hero-image {
-  /* "linear-gradient" to add a darken background effect to the image (___.jpg) to make the text easier to read */
+  /* "linear-gradient" to add a darken background effect to the image (___.jpg) - makes text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero-canyon-river.jpg");
   height: 455px; /*500px*/
   /* Position and center the image to scale well on all screens */
@@ -157,9 +157,15 @@ header {
   color: #2c0906;
   text-align: center;
   line-height: 1.5;
+  background-color: burlywood;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 75px;
+}
+
+.welcome p {
   margin-left: 150px;
   margin-right: 150px;
-  margin-bottom: 75px;
 }
 /* End of Intro */
 
@@ -193,7 +199,8 @@ hr {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-right: 5px;
   margin-left: 5.9px;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .caption {
@@ -208,6 +215,19 @@ hr {
   clear: both;
   display: table;
 }
+
+.featured-description {
+  float: left;
+  width: 50%;
+  
+}
+
+.row-two {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 /* Playlist/Song and Video of the Week */
 .recommendation {
@@ -250,6 +270,7 @@ hr {
   background-color: burlywood;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 10px;
   clear: both;
 }
 /* End of Quote of the Week */
@@ -258,18 +279,24 @@ hr {
 /* Footer */
 footer {
     background-color: #ce8653;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
-    /* color:  */
+    color: #2c0906;
     clear: both;
 }
 
-/* .footer-nav {
-  
-} */
+.fa-brands {
+  color: #2c0906;
+  padding: 4px;
+  margin-bottom: 27px;
+}
 
 .footer-links {
-  padding: 10px;
+  padding: 4px;
   text-decoration: none;
+  color: #2c0906;
+  background-color: tan;
 }
 /* End of Footer Page */
 
