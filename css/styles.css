@@ -4,6 +4,11 @@
   box-sizing: border-box;
 } 
 
+
+/* Fonts */
+/* font-family: 'DM Serif Display', serif; */
+
+
 body{
   background-color: tan;  /* or tan ? */
   display: block;
@@ -169,9 +174,11 @@ header {
 }
 /* End of Intro */
 
+
 hr {
   border: 1px dotted #844728;
 }
+
 
 /* Featured Trip */
 .featured-title {
@@ -185,7 +192,6 @@ hr {
   margin-top: 25px;
   margin-left: 520px;
   margin-right: 520px;
-
 }
 
 .polaroid {
@@ -250,35 +256,36 @@ hr {
 
 /* Playlist/Song and Video of the Week */
 .recommendation {
-  margin-top: 75px;
+  margin-top: 40px;
 }
 .audio-rec {
   float: left;
-  width: 48%;
-  height: 500px;
+  width: 48.5%;
+  height: 515px;
   text-align: center;
+  color: white;
   background-color: #844728;
-  margin: 10px
+  margin: 10px;
+  margin-bottom: 40px;
 }
-
-/* .vertical-line {
-  border-left: 2px solid white;
-  height: 500px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  /* top: 0; 
-  margin-bottom: 15px;
-} */
 
 .video-rec {
   float: right;
-  width: 48%;
-  height: 500px;
+  width: 48.5%;
+  height: 515px;
   text-align: center;
+  color: white;
   background-color: #844728;
   margin: 10px;
+  margin-bottom: 40px;
 }
+
+.audio-rec p, .video-rec p {
+  color: rgb(248, 227, 198);
+  padding: 10px;
+  line-height: 1.1;
+}
+/* End of Playlist/Song, Video Recommendation */
 
 
 /* Qoute of the Week */
@@ -289,7 +296,7 @@ hr {
   background-color: burlywood;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   clear: both;
 }
 /* End of Quote of the Week */
@@ -357,7 +364,7 @@ footer {
 input[type=text], textarea {    /* no space between input and opening bracket for form to show properly */ 
   width: 100%;
   padding: 12px;
-  border: 1px solid rgb(155, 147, 147);
+  border: 1px solid rgb(100, 50, 50);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
