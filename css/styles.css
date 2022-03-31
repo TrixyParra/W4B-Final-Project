@@ -5,9 +5,10 @@
 } 
 
 
-/* Fonts */
-/* font-family: 'DM Serif Display', serif; */
-/* font-family: 'Lato', sans-serif; */
+/* Fonts 
+    font-family: 'DM Serif Display', serif; 
+    font-family: 'Lato', sans-serif; 
+*/
 
 
 body{
@@ -139,7 +140,7 @@ header {
 .hero-image {
   /* "linear-gradient" adds a darken background effect to the image (___.jpg) - makes text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero-canyon-river.jpg");
-  height: 455px; /*500px*/
+  height: 500px; /*455px*/
   /* Position and center the image to scale well on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -436,10 +437,10 @@ input[type=submit]:hover {    /* Style Submit button on hover */
 
 /* Extra --- Blog, Gallery, Community Page */
 .hero-image-coming-soon {
-  /* "linear-gradient" to add a darken background effect to the image (___.jpg) to make the text easier to read */
+  /* "linear-gradient" to add a darken background effect to the image to make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero-canyon-river.jpg");
-  height: 455px; /*500px*/
-  /* Position and center the image to scale well on all screens */
+  height: 500px; /* or 455px */
+  /* Positions and centers the image to scale well on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
