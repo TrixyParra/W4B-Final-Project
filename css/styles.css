@@ -39,7 +39,7 @@ ul li {
     display: inline-block; /* horizontally aligned */
     /* padding-right: 14px; */
     background-color: #844728;
-    border: 1px solid white;
+    border: 1px solid tan;
     padding: 10px;
     margin-top: 7px;
     overflow: hidden;  
@@ -56,16 +56,16 @@ ul li a:hover {
 }
 
 ul li:hover:not(.active) {
-    background-color: white; /* hover background color */
+    background-color: tan; /* hover background color */
     border: 1px solid #844728;
 }
 
-/* active pending to fix? */
+/* active */
 .active {
   padding: 10px;
   padding-right: 14px;
   margin-top: 7px;
-  background-color: white;
+  background-color: tan;
   color: #844728;
   border: 1px solid #844728;
   overflow: hidden;
@@ -91,7 +91,7 @@ ul li:hover:not(.active) {
   
   /* Background color to dropdown tabs on hover */
 .dropdown:hover .dropbtn {
-    background-color: white;
+    background-color: tan;
     color: #844728;
 }
   
